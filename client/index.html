@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-root">
+    <aside class="panel users-panel glass">
+      <h2>Online</h2>
+      <ul id="users"></ul>
+      <div class="hint">Open a second tab to test multi-user</div>
+    </aside>
+
+    <main class="canvas-wrap">
+      <header class="toolbar glass">
+        <div class="tools">
+          <button data-tool="brush" class="tool-btn active">✏️ Brush</button>
+          <button data-tool="eraser" class="tool-btn">🧽 Eraser</button>
+          <label class="picker">
+            <span>🎨</span>
+            <input id="color" type="color" value="#ff6b6b"/>
+          </label>
+          <label class="slider">
+            <span>🧵</span>
+            <input id="size" type="range" min="1" max="50" value="6"/>
+          </label>
+        </div>
+        <div class="actions">
+          <button id="undo" class="action-btn">↩︎ Undo</button>
+          <button id="redo" class="action-btn">↪︎ Redo</button>
+          <button id="clear" class="action-btn danger" title="Local clear (dev)">🗑 Clear (local)</button>
+        </div>
+      </header>
+
+      <div class="stage glass">
+        <canvas id="canvas"></canvas>
+        <div id="cursors" class="cursors"></div>
+      </div>
+
+      <footer class="status glass">
+        <div>FPS: <span id="fps">--</span></div>
+        <div>Latency: <span id="latency">--</span>ms</div>
+        <div>Ops: <span id="opsCount">0</span></div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
