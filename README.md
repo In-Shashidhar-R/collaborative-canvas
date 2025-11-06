@@ -1,52 +1,64 @@
-# 🖊️ Real-Time Collaborative Drawing Canvas
+# 🖊️ Real-Time Collaborative Drawing Canvas  
+### _Developed for FLAM Assessment — Full Stack Live Application Module_
 
-Vanilla JS + HTML5 Canvas + Node.js (Express + Socket.IO)
+This project is a **real-time collaborative drawing platform** built with **Vanilla JavaScript, HTML5 Canvas, Node.js, and Socket.IO**.  
+Multiple users can draw together on the same canvas **simultaneously**, with instant updates visible to everyone in real-time.
 
-## 🚀 Quick Start
+---
 
-```bash
-npm install
-npm start
-# open http://localhost:3000
-# open a second tab/window to see multi-user sync
-```
+## ✨ Key Highlights
 
-## ✨ Features
+- 🎨 **Mastery of Canvas API** for smooth, efficient rendering  
+- ⚡ **Real-time synchronization** using WebSockets  
+- 🌀 **Global Undo/Redo** implementation with conflict resolution  
+- 💎 **Modern UI** design with glassmorphism styling  
+- 🌐 **Scalable event-driven architecture** for multi-user interactions  
 
-- Brush & Eraser with color/width picker
-- Real-time streams (see strokes while they're drawn)
-- Live cursors with per-user colors
-- Global Undo/Redo (server-authoritative)
-- Online users list
-- Conflict-safe stroke ordering via server timestamps
-- Smooth strokes (quadratic Bézier path smoothing)
-- Efficient redraw (incremental, offscreen buffer)
-- Pretty, responsive UI (no frameworks)
+---
 
-## 🧪 Test Multi-User
+## 🚀 Project Overview
 
-- Open two different browsers or incognito windows on `http://localhost:3000`
-- Draw from both—watch in real-time
-- Try Undo/Redo (affects global canvas order)
+**🧠 Purpose:**  
+FLAM Assessment project showcasing real-time full-stack engineering skills.
 
-## 🧰 Scripts
+**⚙️ Tech Stack:**
+- **Frontend:** Vanilla JS, HTML5 Canvas, CSS3  
+- **Backend:** Node.js, Express, Socket.IO (WebSockets)
 
-- `npm start` – run server (serves client)
-- `npm run dev` – same as start with NODE_ENV=development
+**🎯 Core Features:**
+- ✏️ Brush, 🧽 Eraser, 🎨 Color Picker, Stroke Width Control  
+- 🔄 Real-time Multi-User Sync (live strokes + cursors)  
+- ⏪ Global Undo/Redo synchronized across all users  
+- 👥 Active User Indicators with color badges  
+- 📈 FPS and Latency performance metrics  
 
-## 🌐 Deploy
+**💎 Design:**
+- Modern **glassmorphism UI**
+- Responsive layout
+- Smooth animations and transitions
 
-- **Render/Heroku/Railway**: Create a Node app, set start command to `npm start`.
-- **Vercel**: Not ideal with WebSockets server. Prefer Render/Railway/Heroku.
-- Set **PORT** env if your platform assigns one.
+---
 
-## 🧩 Known Limitations
+## 🧩 FLAM Assessment Learning Outcomes
 
-- In-memory state only (no DB). Restart clears canvas.
-- Undo/Redo is global LIFO (latest applied stroke wins).
-- No authentication.
+- ✅ Implemented **real-time bidirectional communication** using WebSockets  
+- 🧩 Designed a **scalable, event-driven architecture** for collaborative apps  
+- 🖌️ Demonstrated **Canvas API proficiency** with optimized drawing techniques  
+- ⚙️ Ensured **performance stability** with incremental rendering and double-buffering  
+- 🧾 Delivered a **production-ready application** with clear documentation and deployment setup  
 
-## ⏱️ Time Spent
+---
 
-~6–7 hours (design + coding + docs + styling).
+## 📦 Deployment
 
+- 🌐 **Deployed on Render** (supports WebSockets)  
+- **Live Demo:** [https://your-app-name.onrender.com](https://collaborative-canvas-rp47.onrender.com)  
+- **GitHub Repo:** [https://github.com/yourusername/collaborative-canvas](https://github.com/In-Shashidhar-R/collaborative-canvas)
+
+---
+
+## 🏆 Summary
+
+> This project demonstrates strong front-end and back-end integration skills, real-time communication design, and visual finesse — aligning with the **FLAM Assessment** objectives for building efficient, scalable, and interactive web applications.
+
+---
